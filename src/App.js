@@ -1,25 +1,18 @@
-import logo from './logo.svg';
+import React from "react";
 import './App.css';
+import Card from "./js/components/Card";
+import Footer from "./js/components/Footer";
+import Jumbotron from "./js/components/Jumbotron";
+import Navbar from "./js/components/Navbar";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  <div className="container-fluid">
+    <Navbar/>
+    <Jumbotron />
+    <Card />
+    <Footer />
+  </div>);
 }
 
 export default App;
